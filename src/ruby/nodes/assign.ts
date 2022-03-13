@@ -20,7 +20,7 @@ export const printAssign: Plugin.Printer<Ruby.Assign> = (path, opts, print) => {
     rightSideDoc = group(join([",", line], valueDoc));
   }
 
-  if (skipAssignIndent(valueNode)) {
+  if (skipAssignIndent(valueNode, opts)) {
     return group([targetDoc, " = ", rightSideDoc]);
   }
 

@@ -136,6 +136,14 @@ const plugin = {
       description:
         "When possible, convert blocks to the more concise Symbol#to_proc syntax.",
       since: "1.0.0"
+    },
+    rubyAssignmentNewline: {
+      type: "boolean",
+      category: "Ruby",
+      default: true,
+      description:
+        "Adds a newline and indentation after assignment to a variable in most cases.",
+      since: "2.0.1"
     }
   },
   defaultOptions: {

@@ -96,7 +96,7 @@ export const printAssoc: Plugin.Printer<Ruby.Assoc> = (path, opts, print) => {
     return parts;
   }
 
-  if (!skipAssignIndent(node.value) || node.key.comments) {
+  if (!skipAssignIndent(node.value, opts) || node.key.comments) {
     parts.push(indent([line, valueDoc]));
   } else {
     parts.push(" ", valueDoc);

@@ -63,6 +63,7 @@ export type Options = Prettier.ParserOptions<any> & {
   rubyModifier: boolean,
   rubySingleQuote: boolean,
   rubyToProc: boolean
+  rubyAssignmentNewline: boolean,
 };
 
 // hasPragma was not required, but since we're testing it explicitly we're going
